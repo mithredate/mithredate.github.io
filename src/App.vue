@@ -1,41 +1,44 @@
 <template>
-  <PageComponent bgColor="bg-teal-700">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="order-2 md:order-1">
+  <FontArgon>
+    <PageComponent bgColor="bg-teal-700">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mb-8">
+      <div class="order-2 md:order-1 md:col-span-2">
         <h1 class="text-white text-3xl mb-4">Mehrdad Hedayati</h1>
-        <h2 class="text-white text-5xl mb-8">Senior Fullstack Developer </h2>
-        <p class="text-gray-200 text-justify mb-8">
+        <h2 class="text-white text-5xl">Senior Fullstack Developer </h2>
+      </div>
+      <div class="flex order-1 md:order-2 justify-normal md:justify-end">
+        <img src="@/assets/profilepic.jpeg" alt="Profile Picture" class="rounded-full w-32 h-32 md:w-48 md:h-48">
+      </div>
+    </div>
+    <p class="text-gray-200 text-justify inter-word mb-4">
           Over 10 years of experience developing diverse projects and products,
           thriving in Agile environments, and collaborating with cross-functional
           teams to deliver clean, maintainable, high-quality, and well-tested code.
-
+        </p>
+        <p class="text-gray-200 mb-4 text-justify inter-word">
           Interested in Books, Anime, Sushi, and Yoga.
-
+        </p>
+        <p class="text-gray-200 mb-8">
           Let's connect!
         </p>
         
         <ul class="flex flex-wrap mb-4">
             <li v-for="skill in coreCompetencies" :key="skill" class="bg-teal-900 text-white rounded-full px-3 py-1 text-sm mr-2 mb-2">{{ skill }}</li>
         </ul>
-      </div>
-      <div class="flex order-1 md:order-2">
-        <img src="@/assets/profilepic.jpeg" alt="Profile Picture" class="rounded-full w-32 h-32 md:w-48 md:h-48">
-      </div>
-    </div>
   </PageComponent>
   <PageComponent bgColor="bg-gray-200">
     <div class="container max-w-screen-md text-gray-700 min-h-screen">
       <h2 class="text-gray-800 text-3xl mb-8">Employment History</h2>
       <ul>
         <li v-for="position in positions" :key="position.title" class="mb-12">
-          <div class="flex items-center mb-4">
+          <div class="flex md:flex-row flex-col items-center mb-4">
             <div class="p-4 mr-4">
               <img :src="position.logo" alt="Company Logo" class="w-20 h-20">
             </div>
             <div>
               <h3 class="text-2xl font-bold text-teal-900">{{ position.title }}</h3>
-              <p class="text-xl italic text-teal-900">{{ position.company }}</p>
-              <p class="text-sm italic">{{ position.dates}}</p>
+              <p class="text-l md:text-xl italic text-teal-900">{{ position.company }}</p>
+              <p class="text-xs md:text-sm italic">{{ position.dates}}</p>
             </div>
           </div>
           <p v-html="position.description" class="mb-4"></p>
@@ -46,8 +49,9 @@
       </ul>
     </div>
   </PageComponent>
-  <footer class="fixed bottom-0 left-0 w-full text-gray-900 bg-teal-700 bg-opacity-90 py-2 shadow-inner">
-    <div class="container mx-auto flex justify-between items-center">
+  <footer class="fixed bottom-0 left-0 w-full text-gray-900 bg-teal-700 shadow-inner">
+    <div class="bg-white w-full-h-full bg-opacity-20 py-2">
+      <div class="container mx-auto flex justify-between items-center md:flex-row flex-col gap-2">
       <div class="flex-1 flex justify-center items-center">
         <a v-for="link in footerLinks" :key="link.name" :href="link.url" target="_blank" class="mr-4">
           <img :src="link.logo" :alt="link.name" class="w-6 h-6">
@@ -56,10 +60,12 @@
       <a 
         href="https://www.flaticon.com/free-icons/email" 
         title="Flaticon"
-        class="text-gray-200 text-xs mr-2"
+        class="text-gray-800 text-xs mr-2"
       >Icons by Uniconlabs - Flaticon</a>
     </div>
+    </div>
   </footer>
+  </FontArgon>
 </template>
 
 <script>
@@ -74,6 +80,7 @@ import githubLogo from '@/assets/logos/github.png'
 import emailLogo from '@/assets/logos/email.png'
 import telegramLogo from '@/assets/logos/telegram.png'
 import xLogo from '@/assets/logos/x.png'
+import FontArgon from './components/FontArgon.vue';
 
 export default {
   components: {
