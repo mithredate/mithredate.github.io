@@ -7,7 +7,7 @@
         <h2 class="text-white text-5xl">Senior Fullstack Developer </h2>
       </div>
       <div class="flex order-1 md:order-2 justify-normal md:justify-end">
-        <img src="@/assets/profilepic.jpeg" alt="Profile Picture" class="rounded-full w-32 h-32 md:w-48 md:h-48">
+        <img src="@/assets/profilepic.jpeg" alt="Mehrdad Hedayati Profile Picture" class="rounded-full w-32 h-32 md:w-48 md:h-48">
       </div>
     </div>
     <p class="text-gray-200 text-justify inter-word mb-4">
@@ -33,7 +33,7 @@
         <li v-for="position in positions" :key="position.title" class="mb-12">
           <div class="flex md:flex-row flex-col items-center mb-4">
             <div class="p-4 mr-4">
-              <img :src="position.logo" alt="Company Logo" class="w-20 h-20">
+              <img :src="position.logo" :alt="`${position.company} Logo`" class="w-20 h-20">
             </div>
             <div>
               <h3 class="text-2xl font-bold text-teal-900">{{ position.title }}</h3>
@@ -54,7 +54,7 @@
       <div class="container mx-auto flex justify-between items-center md:flex-row flex-col gap-2">
       <div class="flex-1 flex justify-center items-center">
         <a v-for="link in footerLinks" :key="link.name" :href="link.url" target="_blank" class="mr-4">
-          <img :src="link.logo" :alt="link.name" class="w-6 h-6">
+          <img :src="link.logo" :alt="`${link.name} Logo`" class="w-6 h-6">
         </a>
       </div>
       <a 
