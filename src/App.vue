@@ -2,52 +2,51 @@
   <PageComponent bgColor="bg-teal-700">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div class="order-2 md:order-1">
-        <h1 class="text-white text-4xl text-center md:text-left">Mehrdad Hedayati</h1>
-        <h2 class="text-white text-5xl text-center md:text-left">Senior Fullstack Developer </h2>
-        <p class="text-white mt-2 text-justify">
+        <h1 class="text-white text-3xl mb-4">Mehrdad Hedayati</h1>
+        <h2 class="text-white text-5xl mb-8">Senior Fullstack Developer </h2>
+        <p class="text-gray-200 text-justify mb-8">
           Over 10 years of experience developing diverse projects and products,
           thriving in Agile environments, and collaborating with cross-functional
           teams to deliver clean, maintainable, high-quality, and well-tested code.
-        </p>
-        <p class="text-white mt-2">
+
           Interested in Books, Anime, Sushi, and Yoga.
+
+          Let's connect!
         </p>
-        <p class="text-white mt-2">
-          Let's connect! 
-        </p>
-        <ul class="flex flex-wrap mb-4 mt-8">
+        
+        <ul class="flex flex-wrap mb-4">
             <li v-for="skill in coreCompetencies" :key="skill" class="bg-teal-900 text-white rounded-full px-3 py-1 text-sm mr-2 mb-2">{{ skill }}</li>
         </ul>
       </div>
-      <div class="flex justify-center md:justify-end order-1 md:order-2">
+      <div class="flex order-1 md:order-2">
         <img src="@/assets/profilepic.jpeg" alt="Profile Picture" class="rounded-full w-32 h-32 md:w-48 md:h-48">
       </div>
     </div>
   </PageComponent>
-  <PageComponent bgColor="bg-sky-200">
-    <div class="container max-w-screen-md text-sky-700 min-h-screen">
-      <h2 class="text-2xl mb-4">Employment History</h2>
+  <PageComponent bgColor="bg-gray-200">
+    <div class="container max-w-screen-md text-gray-700 min-h-screen">
+      <h2 class="text-gray-800 text-3xl mb-8">Employment History</h2>
       <ul>
         <li v-for="position in positions" :key="position.title" class="mb-12">
           <div class="flex items-center mb-4">
-            <div class="p-4 rounded border border-sky-700 mr-4">
-              <img :src="position.logo" alt="Company Logo" class="w-12 h-12">
+            <div class="p-4 mr-4">
+              <img :src="position.logo" alt="Company Logo" class="w-20 h-20">
             </div>
             <div>
-              <h3 class="text-xl">{{ position.title }}</h3>
-              <p>{{ position.company }}</p>
-              <p>{{ position.dates }}</p>
+              <h3 class="text-2xl font-bold text-teal-900">{{ position.title }}</h3>
+              <p class="text-xl italic text-teal-900">{{ position.company }}</p>
+              <p class="text-sm italic">{{ position.dates}}</p>
             </div>
           </div>
+          <p v-html="position.description" class="mb-4"></p>
           <div class="flex flex-wrap mb-4">
-            <span v-for="skill in position.skills" :key="skill" class="bg-sky-700 text-white rounded-full px-3 py-1 text-sm mr-2 mb-2">{{ skill }}</span>
+            <span v-for="skill in position.skills" :key="skill" class="bg-teal-700 text-white rounded-full px-3 py-1 text-sm mr-2 mb-2">{{ skill }}</span>
           </div>
-          <p v-html="position.description"></p>
         </li>
       </ul>
     </div>
   </PageComponent>
-  <footer :class="footerClass" class="fixed bottom-0 left-0 w-full text-gray-900 py-2">
+  <footer class="fixed bottom-0 left-0 w-full text-gray-900 bg-teal-700 bg-opacity-90 py-2 shadow-inner">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex-1 flex justify-center items-center">
         <a v-for="link in footerLinks" :key="link.name" :href="link.url" target="_blank" class="mr-4">
@@ -57,7 +56,7 @@
       <a 
         href="https://www.flaticon.com/free-icons/email" 
         title="Flaticon"
-        class="text-gray-800 text-xs"
+        class="text-gray-200 text-xs mr-2"
       >Icons by Uniconlabs - Flaticon</a>
     </div>
   </footer>
@@ -73,6 +72,8 @@ import rdsyscoLogo from '@/assets/logos/rdsysco.png'
 import linkedinLogo from '@/assets/logos/linkedin.png'
 import githubLogo from '@/assets/logos/github.png'
 import emailLogo from '@/assets/logos/email.png'
+import telegramLogo from '@/assets/logos/telegram.png'
+import xLogo from '@/assets/logos/x.png'
 
 export default {
   components: {
@@ -92,7 +93,9 @@ export default {
       footerLinks: [
         { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mhedayati', logo: linkedinLogo },
         { name: 'GitHub', url: 'https://github.com/mithredate', logo: githubLogo },
-        { name: 'Email', url: 'mailto:mehrdad.hedayati@gmail.com', logo: emailLogo }
+        { name: 'Email', url: 'mailto:mehrdad.hedayati@gmail.com', logo: emailLogo },
+        { name: 'Telegram', url: 'https://t.me/mithredate', logo: telegramLogo },
+        { name: 'X', url: 'https://x.com/mithredate', logo: xLogo },
       ],
       positions: [
         {
@@ -276,7 +279,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      this.footerClass = window.scrollY > 25 ? 'bg-sky-200' : 'bg-teal-700';
+      this.footerClass = window.scrollY > 25 ? 'bg-teal-200' : 'bg-teal-700';
     }
   }
 }
