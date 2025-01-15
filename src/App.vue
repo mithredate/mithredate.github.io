@@ -31,8 +31,8 @@
       <h2 class="text-gray-800 text-3xl mb-8">Employment History</h2>
       <ul>
         <li v-for="position in positions" :key="position.title" class="mb-12">
-          <div class="flex md:flex-row flex-col items-center mb-4">
-            <div class="p-4 mr-4">
+          <div class="flex md:flex-row flex-col md:items-center items-start mb-4 gap-2">
+            <div class="md:mr-4">
               <img :src="position.logo" :alt="`${position.company} Logo`" class="w-20 h-20">
             </div>
             <div>
