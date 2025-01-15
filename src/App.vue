@@ -21,7 +21,7 @@
         <p class="text-gray-200 mb-8">
           Let's connect!
         </p>
-        
+
         <ul class="flex flex-wrap mb-4">
             <li v-for="skill in coreCompetencies" :key="skill" class="bg-teal-900 text-white rounded-full px-3 py-1 text-sm mr-2 mb-2">{{ skill }}</li>
         </ul>
@@ -49,21 +49,16 @@
       </ul>
     </div>
   </PageComponent>
-  <footer class="fixed bottom-0 left-0 w-full text-gray-900 bg-teal-700 shadow-inner">
-    <div class="bg-white w-full-h-full bg-opacity-20 py-2">
+  <footer class="fixed bottom-0 left-0 w-full text-gray-900 bg-teal-700 shadow-inner py-2">
+    
       <div class="container mx-auto flex justify-between items-center md:flex-row flex-col gap-2">
       <div class="flex-1 flex justify-center items-center">
         <a v-for="link in footerLinks" :key="link.name" :href="link.url" target="_blank" class="mr-4">
           <img :src="link.logo" :alt="`${link.name} Logo`" class="w-6 h-6">
         </a>
       </div>
-      <a 
-        href="https://www.flaticon.com/free-icons/email" 
-        title="Flaticon"
-        class="text-gray-800 text-xs mr-2"
-      >Icons by Uniconlabs - Flaticon</a>
     </div>
-    </div>
+    
   </footer>
   </FontArgon>
 </template>
@@ -75,11 +70,11 @@ import check24Logo from '@/assets/logos/check24.png'
 import parslyLogo from '@/assets/logos/parsly.png'
 import podroLogo from '@/assets/logos/podro.svg'
 import rdsyscoLogo from '@/assets/logos/rdsysco.png'
-import linkedinLogo from '@/assets/logos/linkedin.png'
-import githubLogo from '@/assets/logos/github.png'
-import emailLogo from '@/assets/logos/email.png'
-import telegramLogo from '@/assets/logos/telegram.png'
-import xLogo from '@/assets/logos/x.png'
+import linkedinLogo from '@/assets/icons/linkedin.svg'
+import githubLogo from '@/assets/icons/github.svg'
+import emailLogo from '@/assets/icons/email.svg'
+import telegramLogo from '@/assets/icons/telegram.svg'
+import xLogo from '@/assets/icons/x.svg'
 import FontArgon from './components/FontArgon.vue';
 
 export default {
