@@ -16,7 +16,7 @@
           teams to deliver clean, maintainable, high-quality, and well-tested code.
         </p>
         <p class="text-gray-200 mb-4 text-justify inter-word">
-          Interested in Books, Anime, Sushi, and Yoga.
+          I love Books, Anime, Sushi, and Yoga.
         </p>
         <p class="text-gray-200 mb-8">
           Let's connect!
