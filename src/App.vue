@@ -1,65 +1,69 @@
 <template>
   <FontArgon>
     <PageComponent bgColor="bg-teal-700">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mb-8">
-      <div class="order-2 md:order-1 md:col-span-2">
-        <h1 class="text-white text-3xl mb-4">Mehrdad Hedayati</h1>
-        <h2 class="text-white text-5xl">Senior Fullstack Developer </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mb-8">
+        <div class="order-2 md:order-1 md:col-span-2">
+          <h1 class="text-white text-3xl mb-4">Mehrdad Hedayati</h1>
+          <h2 class="text-white text-5xl">Senior Fullstack Developer </h2>
+        </div>
+        <div class="flex order-1 md:order-2 justify-normal md:justify-end">
+          <img src="@/assets/profilepic.jpeg" alt="Mehrdad Hedayati Profile Picture"
+               class="rounded-full w-32 h-32 md:w-48 md:h-48">
+        </div>
       </div>
-      <div class="flex order-1 md:order-2 justify-normal md:justify-end">
-        <img src="@/assets/profilepic.jpeg" alt="Mehrdad Hedayati Profile Picture" class="rounded-full w-32 h-32 md:w-48 md:h-48">
-      </div>
-    </div>
-    <p class="text-gray-200 text-justify inter-word mb-4">
-          Over 10 years of experience developing diverse projects and products,
-          thriving in Agile environments, and collaborating with cross-functional
-          teams to deliver clean, maintainable, high-quality, and well-tested code.
-        </p>
-        <p class="text-gray-200 mb-4 text-justify inter-word">
-          I love Books, Anime, Sushi, and Yoga.
-        </p>
-        <p class="text-gray-200 mb-8">
-          Let's connect!
-        </p>
+      <p class="text-gray-200 text-justify inter-word mb-4">
+        Over 10 years of experience developing diverse projects and products,
+        thriving in Agile environments, and collaborating with cross-functional
+        teams to deliver clean, maintainable, high-quality, and well-tested code.
+      </p>
+      <p class="text-gray-200 mb-4 text-justify inter-word">
+        I love my morning coffee, Anime, Sushi, taking a walk along the river, and Yoga.
+      </p>
+      <p class="text-gray-200 mb-8">
+        Let's connect!
+      </p>
 
-        <ul class="flex flex-wrap mb-4">
-            <li v-for="skill in coreCompetencies" :key="skill" class="bg-teal-900 text-white rounded-full px-3 py-1 text-sm mr-2 mb-2">{{ skill }}</li>
-        </ul>
-  </PageComponent>
-  <PageComponent bgColor="bg-gray-200">
-    <div class="container max-w-screen-md text-gray-700 min-h-screen">
-      <h2 class="text-gray-800 text-3xl mb-8">Employment History</h2>
-      <ul>
-        <li v-for="position in positions" :key="position.title" class="mb-12">
-          <div class="flex md:flex-row flex-col md:items-center items-start mb-4 gap-2">
-            <div class="md:mr-4">
-              <img :src="position.logo" :alt="`${position.company} Logo`" class="w-20 h-20">
-            </div>
-            <div>
-              <h3 class="text-2xl font-bold text-teal-900">{{ position.title }}</h3>
-              <p class="text-l md:text-xl italic text-teal-900">{{ position.company }}</p>
-              <p class="text-xs md:text-sm italic">{{ position.dates}}</p>
-            </div>
-          </div>
-          <p v-html="position.description" class="mb-4"></p>
-          <div class="flex flex-wrap mb-4">
-            <span v-for="skill in position.skills" :key="skill" class="bg-teal-700 text-white rounded-full px-3 py-1 text-sm mr-2 mb-2">{{ skill }}</span>
-          </div>
+      <ul class="flex flex-wrap mb-4">
+        <li v-for="skill in coreCompetencies" :key="skill"
+            class="bg-teal-900 text-white rounded-full px-3 py-1 text-sm mr-2 mb-2">{{ skill }}
         </li>
       </ul>
-    </div>
-  </PageComponent>
-  <footer class="fixed bottom-0 left-0 w-full text-gray-900 bg-teal-700 shadow-inner py-2">
-    
-      <div class="container mx-auto flex justify-between items-center md:flex-row flex-col gap-2">
-      <div class="flex-1 flex justify-center items-center">
-        <a v-for="link in footerLinks" :key="link.name" :href="link.url" target="_blank" class="mr-4">
-          <img :src="link.logo" :alt="`${link.name} Logo`" class="w-6 h-6">
-        </a>
+    </PageComponent>
+    <PageComponent bgColor="bg-gray-200">
+      <div class="container max-w-screen-md text-gray-700 min-h-screen">
+        <h2 class="text-gray-800 text-3xl mb-8">Employment History</h2>
+        <ul>
+          <li v-for="position in positions" :key="position.title" class="mb-12">
+            <div class="flex md:flex-row flex-col md:items-center items-start mb-4 gap-2">
+              <div class="md:mr-4">
+                <img :src="position.logo" :alt="`${position.company} Logo`" class="w-20 h-20">
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-teal-900">{{ position.title }}</h3>
+                <p class="text-l md:text-xl italic text-teal-900">{{ position.company }}</p>
+                <p class="text-xs md:text-sm italic">{{ position.dates }}</p>
+              </div>
+            </div>
+            <p v-html="position.description" class="mb-4"></p>
+            <div class="flex flex-wrap mb-4">
+              <span v-for="skill in position.skills" :key="skill"
+                    class="bg-teal-700 text-white rounded-full px-3 py-1 text-sm mr-2 mb-2">{{ skill }}</span>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div>
-    
-  </footer>
+    </PageComponent>
+    <footer class="fixed bottom-0 left-0 w-full text-gray-900 bg-teal-700 shadow-inner py-2">
+
+      <div class="container mx-auto flex justify-between items-center md:flex-row flex-col gap-2">
+        <div class="flex-1 flex justify-center items-center">
+          <a v-for="link in footerLinks" :key="link.name" :href="link.url" target="_blank" class="mr-4">
+            <img :src="link.logo" :alt="`${link.name} Logo`" class="w-6 h-6">
+          </a>
+        </div>
+      </div>
+
+    </footer>
   </FontArgon>
 </template>
 
@@ -75,7 +79,7 @@ import githubLogo from '@/assets/icons/github.svg'
 import emailLogo from '@/assets/icons/email.svg'
 import telegramLogo from '@/assets/icons/telegram.svg'
 import xLogo from '@/assets/icons/x.svg'
-import FontArgon from './components/FontArgon.vue';
+import rsfLogo from '@/assets/logos/roadsurfer.jpg'
 
 export default {
   components: {
@@ -93,17 +97,40 @@ export default {
         "DevOps", "Docker", "Kubernetes",
       ],
       footerLinks: [
-        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mhedayati', logo: linkedinLogo },
-        { name: 'GitHub', url: 'https://github.com/mithredate', logo: githubLogo },
-        { name: 'Email', url: 'mailto:mehrdad.hedayati@gmail.com', logo: emailLogo },
-        { name: 'Telegram', url: 'https://t.me/mithredate', logo: telegramLogo },
-        { name: 'X', url: 'https://x.com/mithredate', logo: xLogo },
+        {name: 'LinkedIn', url: 'https://www.linkedin.com/in/mhedayati', logo: linkedinLogo},
+        {name: 'GitHub', url: 'https://github.com/mithredate', logo: githubLogo},
+        {name: 'Email', url: 'mailto:mehrdad.hedayati@gmail.com', logo: emailLogo},
+        {name: 'Telegram', url: 'https://t.me/mithredate', logo: telegramLogo},
+        {name: 'X', url: 'https://x.com/mithredate', logo: xLogo},
       ],
       positions: [
         {
+          title: 'Senior Software Engineer',
+          company: 'Roadsurfer, Frankfurt am Main - Remote',
+          dates: '02/2025 - Now',
+          logo: rsfLogo,
+          skills: [
+            'PHP8',
+            'Symfony',
+            'Segment CDP',
+            'Braze CEP',
+            'Jenkins',
+            'Docker',
+            'ELK Stack (Kibana)',
+            'Microservices',
+            'RESTful API',
+          ],
+          description: `
+            <ul class="list-disc list-inside text-justify">
+              <li>Implemented custom PHP SDK for Braze with type-safe event catalog, increasing data consistency and monitoring</li>
+              <li>Introduced documentation best practices, enhancing inter-team communication</li>
+            </ul>
+          `
+        },
+        {
           title: 'Full-stack Engineer',
           company: 'Check24 Vergleichsportal, Frankfurt am Main - Hybrid',
-          dates: '08/2024 - Now',
+          dates: '08/2024 - 01/2025',
           logo: check24Logo,
           skills: [
             'PHP8',
