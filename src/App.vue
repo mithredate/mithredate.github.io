@@ -106,7 +106,7 @@ export default {
       positions: [
         {
           title: 'Senior Software Engineer',
-          company: 'Roadsurfer, Frankfurt am Main - Remote',
+          company: 'Roadsurfer, Munich - Remote',
           dates: '02/2025 - Now',
           logo: rsfLogo,
           skills: [
