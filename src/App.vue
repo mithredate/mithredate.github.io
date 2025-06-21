@@ -1,7 +1,7 @@
 <template>
   <FontArgon>
     <!-- Hero Section -->
-    <section class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-black flex items-center justify-center relative overflow-hidden">
+    <section class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-black flex justify-center items-start sm:items-center relative overflow-hidden pt-16 sm:pt-0">
       <!-- Animated background elements -->
       <div class="absolute inset-0 opacity-10">
         <div class="absolute top-20 left-20 w-72 h-72 bg-emerald-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
@@ -81,13 +81,13 @@
           <!-- Timeline -->
           <div class="relative">
             <!-- Timeline line -->
-            <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-emerald-500"></div>
+            <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-emerald-500"></div>
             
             <!-- Experience Items -->
             <div v-for="(position, index) in positions" :key="position.title" 
                  class="relative mb-12 sm:mb-16">
               <!-- Timeline dot -->
-              <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full border-4 border-white shadow-lg -top-2"></div>
+              <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full border-4 border-white shadow-lg -top-2"></div>
               
               <!-- Content -->
               <div class="ml-12 sm:ml-0 sm:w-5/12" :class="index % 2 === 0 ? 'sm:mr-auto' : 'sm:ml-auto'">
