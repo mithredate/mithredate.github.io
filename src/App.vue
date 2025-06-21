@@ -1,12 +1,12 @@
 <template>
   <FontArgon>
     <!-- Hero Section -->
-    <section class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center relative overflow-hidden">
+    <section class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-black flex items-center justify-center relative overflow-hidden">
       <!-- Animated background elements -->
       <div class="absolute inset-0 opacity-10">
-        <div class="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
-        <div class="absolute top-40 right-20 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-2000"></div>
-        <div class="absolute -bottom-8 left-40 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-4000"></div>
+        <div class="absolute top-20 left-20 w-72 h-72 bg-emerald-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+        <div class="absolute top-40 right-20 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-2000"></div>
+        <div class="absolute -bottom-8 left-40 w-72 h-72 bg-slate-700 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-4000"></div>
       </div>
       
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -14,7 +14,7 @@
           <!-- Profile Image -->
           <div class="mb-8 flex justify-center">
             <div class="relative">
-              <div class="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full blur-lg opacity-75 animate-pulse"></div>
+              <div class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-blue-400 rounded-full blur-lg opacity-75 animate-pulse"></div>
               <img src="@/assets/profilepic.jpeg" alt="Mehrdad Hedayati" 
                    class="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-white shadow-2xl object-cover">
             </div>
@@ -40,10 +40,10 @@
           
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <a href="#experience" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <a href="#experience" class="bg-gradient-to-r from-blue-600 to-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:from-blue-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
               View Experience
             </a>
-            <a href="#contact" class="border-2 border-purple-400 text-purple-400 px-8 py-3 rounded-full font-semibold hover:bg-purple-400 hover:text-white transition-all duration-300 transform hover:scale-105">
+            <a href="#contact" class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300 transform hover:scale-105">
               Get In Touch
             </a>
           </div>
@@ -81,13 +81,13 @@
           <!-- Timeline -->
           <div class="relative">
             <!-- Timeline line -->
-            <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 to-pink-500"></div>
+            <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-emerald-500"></div>
             
             <!-- Experience Items -->
             <div v-for="(position, index) in positions" :key="position.title" 
                  class="relative mb-12 sm:mb-16">
               <!-- Timeline dot -->
-              <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full border-4 border-white shadow-lg -top-2"></div>
+              <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full border-4 border-white shadow-lg -top-2"></div>
               
               <!-- Content -->
               <div class="ml-12 sm:ml-0 sm:w-5/12" :class="index % 2 === 0 ? 'sm:mr-auto' : 'sm:ml-auto'">
@@ -98,7 +98,7 @@
                          class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl object-cover shadow-md">
                     <div class="flex-1">
                       <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-1">{{ position.title }}</h3>
-                      <p class="text-lg text-purple-600 font-semibold mb-1">{{ position.company }}</p>
+                      <p class="text-lg text-blue-600 font-semibold mb-1">{{ position.company }}</p>
                       <p class="text-sm text-gray-500">{{ position.dates }}</p>
                     </div>
                   </div>
@@ -109,7 +109,7 @@
                   <!-- Skills -->
                   <div class="flex flex-wrap gap-2">
                     <span v-for="skill in position.skills" :key="skill" 
-                          class="bg-gradient-to-r from-purple-50 to-pink-50 text-purple-700 px-3 py-1 rounded-full text-sm font-medium border border-purple-200">
+                          class="bg-gradient-to-r from-blue-50 to-emerald-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium border border-blue-200">
                       {{ skill }}
                     </span>
                   </div>
@@ -122,7 +122,7 @@
     </section>
 
     <!-- Mentorship Section -->
-    <section class="py-20 bg-gradient-to-br from-slate-50 to-purple-50">
+    <section class="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
           <!-- Section Header -->
@@ -138,7 +138,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-8">
               <!-- ADPList Logo/Icon -->
               <div class="flex-shrink-0">
-                <div class="w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+                <div class="w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-blue-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg">
                   <svg class="w-12 h-12 sm:w-16 sm:h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                   </svg>
@@ -157,22 +157,22 @@
                 <div class="mb-8">
                   <h4 class="text-lg font-semibold text-gray-800 mb-4">Areas of Expertise:</h4>
                   <div class="flex flex-wrap justify-center lg:justify-start gap-3">
-                    <span class="bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">
+                    <span class="bg-gradient-to-r from-blue-50 to-emerald-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">
                       Full-Stack Development
                     </span>
-                    <span class="bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">
+                    <span class="bg-gradient-to-r from-blue-50 to-emerald-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">
                       PHP & Laravel
                     </span>
-                    <span class="bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">
+                    <span class="bg-gradient-to-r from-blue-50 to-emerald-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">
                       Vue.js & React
                     </span>
-                    <span class="bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">
+                    <span class="bg-gradient-to-r from-blue-50 to-emerald-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">
                       AWS & DevOps
                     </span>
-                    <span class="bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">
+                    <span class="bg-gradient-to-r from-blue-50 to-emerald-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">
                       Career Growth
                     </span>
-                    <span class="bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">
+                    <span class="bg-gradient-to-r from-blue-50 to-emerald-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">
                       Technical Leadership
                     </span>
                   </div>
@@ -182,7 +182,7 @@
                 <a href="https://adplist.org/mentors/mehrdad-hedayati" 
                    target="_blank" 
                    rel="noopener noreferrer"
-                   class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                   class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
                   <span>Book a Session</span>
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
@@ -199,11 +199,11 @@
               <p class="text-gray-600">All sessions are completely free</p>
             </div>
             <div class="text-center">
-              <div class="text-3xl font-bold text-purple-600 mb-2">30-60 min</div>
+              <div class="text-3xl font-bold text-emerald-600 mb-2">30-60 min</div>
               <p class="text-gray-600">Flexible session duration</p>
             </div>
             <div class="text-center">
-              <div class="text-3xl font-bold text-indigo-600 mb-2">Remote</div>
+              <div class="text-3xl font-bold text-slate-700 mb-2">Remote</div>
               <p class="text-gray-600">Video calls from anywhere</p>
             </div>
           </div>
@@ -212,7 +212,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <section id="contact" class="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-black">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Let's Connect</h2>
@@ -233,10 +233,10 @@
           <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
             <p class="text-lg text-gray-300 mb-4">Interested in:</p>
             <div class="flex flex-wrap justify-center gap-4 text-white">
-              <span class="bg-purple-600 px-4 py-2 rounded-full text-sm font-medium">Mentoring & Coaching</span>
-              <span class="bg-pink-600 px-4 py-2 rounded-full text-sm font-medium">Technical Discussions</span>
-              <span class="bg-indigo-600 px-4 py-2 rounded-full text-sm font-medium">Open Source Projects</span>
-              <span class="bg-teal-600 px-4 py-2 rounded-full text-sm font-medium">Knowledge Sharing</span>
+              <span class="bg-blue-600 px-4 py-2 rounded-full text-sm font-medium">Mentoring & Coaching</span>
+              <span class="bg-emerald-600 px-4 py-2 rounded-full text-sm font-medium">Technical Discussions</span>
+              <span class="bg-slate-700 px-4 py-2 rounded-full text-sm font-medium">Open Source Projects</span>
+              <span class="bg-blue-700 px-4 py-2 rounded-full text-sm font-medium">Knowledge Sharing</span>
             </div>
           </div>
         </div>
@@ -248,7 +248,7 @@
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
           <p class="text-gray-400 text-sm">
-            © 2024 Mehrdad Hedayati. Built with ❤️ using Vue.js & Tailwind CSS
+            © {{ new Date().getFullYear() }} Mehrdad Hedayati
           </p>
         </div>
       </div>
@@ -308,11 +308,11 @@ export default {
           description: `
             <ul class="space-y-2 text-gray-700">
               <li class="flex items-start">
-                <span class="text-purple-500 mr-2">•</span>
+                <span class="text-blue-500 mr-2">•</span>
                 <span>Implemented custom PHP SDK for Braze with type-safe event catalog, increasing data consistency and monitoring</span>
               </li>
               <li class="flex items-start">
-                <span class="text-purple-500 mr-2">•</span>
+                <span class="text-blue-500 mr-2">•</span>
                 <span>Introduced documentation best practices, enhancing inter-team communication</span>
               </li>
             </ul>
