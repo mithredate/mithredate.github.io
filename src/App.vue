@@ -231,12 +231,12 @@
           
           <!-- Contact Info -->
           <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-            <p class="text-lg text-gray-300 mb-4">Available for:</p>
+            <p class="text-lg text-gray-300 mb-4">Interested in:</p>
             <div class="flex flex-wrap justify-center gap-4 text-white">
-              <span class="bg-purple-600 px-4 py-2 rounded-full text-sm font-medium">Full-time positions</span>
-              <span class="bg-pink-600 px-4 py-2 rounded-full text-sm font-medium">Contract work</span>
-              <span class="bg-indigo-600 px-4 py-2 rounded-full text-sm font-medium">Consulting</span>
-              <span class="bg-teal-600 px-4 py-2 rounded-full text-sm font-medium">Open source</span>
+              <span class="bg-purple-600 px-4 py-2 rounded-full text-sm font-medium">Mentoring & Coaching</span>
+              <span class="bg-pink-600 px-4 py-2 rounded-full text-sm font-medium">Technical Discussions</span>
+              <span class="bg-indigo-600 px-4 py-2 rounded-full text-sm font-medium">Open Source Projects</span>
+              <span class="bg-teal-600 px-4 py-2 rounded-full text-sm font-medium">Knowledge Sharing</span>
             </div>
           </div>
         </div>
