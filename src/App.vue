@@ -34,7 +34,7 @@
           </p>
 
           <!-- Quick intro -->
-          <p class="text-base text-gray-400 mb-8 max-w-xl mx-auto">
+          <p class="text-base text-gray-400 mb-8 max-w-xl mx-auto hidden sm:block">
             {{ content.hero.quickIntro }}
           </p>
 
@@ -49,7 +49,7 @@
           </div>
 
           <!-- Core Skills -->
-          <div class="flex flex-wrap justify-center gap-2 mb-8">
+          <div class="flex flex-wrap justify-center gap-2 mb-8 max-w-3xl mx-auto">
             <span v-for="skill in coreCompetencies" :key="skill"
                   class="bg-white/10 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm border border-white/20 hover:bg-white/20 transition-colors">
               {{ skill }}
@@ -212,8 +212,10 @@ export default {
     return {
       content: contentData,
       coreCompetencies: [
-        "DDD", "TDD", "Microservices", "Kubernetes", "AWS",
-          "PHP", "Symfony", "Laravel", "Javascript", "Typescript"
+        "Domain-Driven Design (DDD)", "Test-Driven Development (TDD)",
+          "Agile Software Development",
+        "Microservices", "Kubernetes", "AWS", "RESTful API",
+        "PHP", "Javascript", "Typescript"
       ],
       footerLinks: [
         {name: 'LinkedIn', url: 'https://www.linkedin.com/in/mhedayati', logo: linkedinLogo},
