@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Mehrdad Hedayati - Senior Software Engineer",
+    "description": "Mehrdad Hedayati is a Senior Software Engineer with over 10 years of experience in developing diverse projects and products.",
+    "keywords": "Mehrdad Hedayati, Senior Software Engineer, Fullstack Developer, PHP, Laravel, Symfony, Vue, React, AWS, DevOps",
+    "author": "Mehrdad Hedayati",
+    "ogTitle": "Mehrdad Hedayati - Senior Software Engineer",
+    "ogDescription": "Mehrdad Hedayati is a Senior Software Engineer with over 10 years of experience in developing diverse projects and products.",
+    "twitterTitle": "Mehrdad Hedayati - Senior Software Engineer",
+    "twitterDescription": "Mehrdad Hedayati is a Senior Software Engineer with over 10 years of experience in developing diverse projects and products."
+  },
+  "hero": {
+    "name": "Mehrdad Hedayati",
+    "title": "Senior Fullstack Developer",
+    "tagline": "Over 10 years crafting exceptional digital experiences with clean, maintainable code and innovative solutions.",
+    "quickIntro": "Coffee enthusiast ☕ • Anime lover 🎌 • Sushi connoisseur 🍣 • River walker 🌊 • Yoga practitioner 🧘‍♂️",
+    "profileAlt": "Mehrdad Hedayati",
+    "ctaButtons": {
+      "viewExperience": "View Experience",
+      "getInTouch": "Get In Touch"
+    }
+  },
+  "experience": {
+    "title": "Professional Journey",
+    "subtitle": "A decade of building impactful solutions across diverse industries and technologies"
+  },
+  "mentorship": {
+    "title": "Mentorship",
+    "subtitle": "Sharing knowledge and helping others grow in their software engineering journey",
+    "adpTitle": "ADPList Mentor",
+    "adpDescription": "I'm passionate about helping aspiring software engineers and developers navigate their career paths. Through ADPList, I provide guidance on technical skills, career development, and industry best practices.",
+    "ctaText": "Book a Session"
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "subtitle": "Ready to collaborate on your next project? I'd love to hear from you!"
+  },
+  "footer": {
+    "copyright": "Mehrdad Hedayati"
+  }
+}
