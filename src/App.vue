@@ -1,12 +1,16 @@
 <template>
   <FontArgon>
     <!-- Hero Section -->
-    <section class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-black flex justify-center items-start sm:items-center relative overflow-hidden pt-16 sm:pt-0">
+    <section
+        class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-black flex justify-center items-start sm:items-center relative overflow-hidden pt-16 sm:pt-0">
       <!-- Animated background elements -->
       <div class="absolute inset-0 opacity-10">
-        <div class="absolute top-20 left-20 w-72 h-72 bg-emerald-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
-        <div class="absolute top-40 right-20 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-2000"></div>
-        <div class="absolute -bottom-8 left-40 w-72 h-72 bg-slate-700 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-4000"></div>
+        <div
+            class="absolute top-20 left-20 w-72 h-72 bg-emerald-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+        <div
+            class="absolute top-40 right-20 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-2000"></div>
+        <div
+            class="absolute -bottom-8 left-40 w-72 h-72 bg-slate-700 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-4000"></div>
       </div>
 
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -14,7 +18,8 @@
           <!-- Profile Image -->
           <div class="mb-8 flex justify-center">
             <div class="relative">
-              <div class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-blue-400 rounded-full blur-lg opacity-75 animate-pulse"></div>
+              <div
+                  class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-blue-400 rounded-full blur-lg opacity-75 animate-pulse"></div>
               <img src="@/assets/profilepic.jpeg" :alt="content.hero.profileAlt"
                    class="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-white shadow-2xl object-cover">
             </div>
@@ -40,10 +45,12 @@
 
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <a href="#experience" class="bg-gradient-to-r from-blue-600 to-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:from-blue-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <a href="#experience"
+               class="bg-gradient-to-r from-blue-600 to-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:from-blue-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
               {{ content.hero.ctaButtons.viewExperience }}
             </a>
-            <a href="#contact" class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300 transform hover:scale-105">
+            <a href="#contact"
+               class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300 transform hover:scale-105">
               {{ content.hero.ctaButtons.getInTouch }}
             </a>
           </div>
@@ -81,23 +88,26 @@
           <!-- Timeline -->
           <div class="relative">
             <!-- Timeline line -->
-            <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-emerald-500"></div>
+            <div
+                class="absolute left-4 md:left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-emerald-500"></div>
 
             <!-- Experience Items -->
             <div v-for="(position, index) in positions" :key="position.title"
-                 class="relative mb-12 sm:mb-16">
+                 class="relative mb-12 md:mb-16">
               <!-- Timeline dot -->
-              <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full border-4 border-white shadow-lg -top-2"></div>
+              <div
+                  class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full border-4 border-white shadow-lg -top-2"></div>
 
               <!-- Content -->
-              <div class="ml-12 sm:ml-0 sm:w-5/12" :class="index % 2 === 0 ? 'sm:mr-auto' : 'sm:ml-auto'">
-                <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <div class="ml-12 md:ml-0 md:w-5/12" :class="index % 2 === 0 ? 'md:mr-auto' : 'md:ml-auto'">
+                <div
+                    class="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 md:p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
                   <!-- Header -->
                   <div class="flex items-start gap-4 mb-6">
                     <img :src="position.logo" :alt="`${position.company} Logo`"
-                         class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl object-cover shadow-md">
+                         class="w-16 h-16 md:w-20 md:h-20 rounded-xl object-cover shadow-md">
                     <div class="flex-1">
-                      <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-1">{{ position.title }}</h3>
+                      <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-1">{{ position.title }}</h3>
                       <p class="text-lg text-blue-600 font-semibold mb-1">{{ position.company }}</p>
                       <p class="text-sm text-gray-500">{{ position.dates }}</p>
                     </div>
@@ -124,19 +134,12 @@
           </div>
 
           <!-- Mentorship Card -->
-          <div class="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 sm:p-12 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-            <div class="flex flex-col lg:flex-row items-center gap-8">
-              <!-- ADPList Logo/Icon -->
-              <div class="flex-shrink-0">
-                <div class="w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-blue-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg">
-                  <svg class="w-12 h-12 sm:w-16 sm:h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                  </svg>
-                </div>
-              </div>
-
+          <div
+              class="bg-white rounded-3xl shadow-xs p-8 sm:p-12 hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
+              style="box-shadow: 0 25px 50px -12px rgba(225, 49, 108, 0.15);">
+            <div class="flex flex-col-reverse md:flex-row items-start gap-8">
               <!-- Content -->
-              <div class="flex-1 text-center lg:text-left">
+              <div class="flex-1 text-center md:text-left">
                 <h3 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">{{ content.mentorship.adpTitle }}</h3>
                 <p class="text-lg text-gray-600 mb-6 leading-relaxed">
                   {{ content.mentorship.adpDescription }}
@@ -146,12 +149,23 @@
                 <a href="https://adplist.org/mentors/mehrdad-hedayati"
                    target="_blank"
                    rel="noopener noreferrer"
-                   class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                   class="inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-xs"
+                   style="background: linear-gradient(135deg, rgb(225, 49, 108), rgb(239, 68, 68)); box-shadow: 0 10px 25px rgba(225, 49, 108, 0.3);">
                   <span>{{ content.mentorship.ctaText }}</span>
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                   </svg>
                 </a>
+              </div>
+
+              <!-- ADPList Impact Widget -->
+              <div class="w-full md:w-auto flex justify-center md:justify-end">
+                <div class="w-full max-w-sm md:max-w-xs rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                  <img alt="ADPList Impact"
+                       class="w-full h-auto rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+                       src="https://adplist-users-production.s3.us-east-1.amazonaws.com/3b611639b01fa697d1a33947b79c1229/swags/5c06e00a-1ac5-5dcc-946d-a1e0bc7bd514.webp">
+                </div>
               </div>
             </div>
           </div>
@@ -213,7 +227,7 @@ export default {
       content: contentData,
       coreCompetencies: [
         "Domain-Driven Design (DDD)", "Test-Driven Development (TDD)",
-          "Agile Software Development",
+        "Agile Software Development",
         "Microservices", "Kubernetes", "AWS", "RESTful API",
         "PHP", "Javascript", "Typescript"
       ],
