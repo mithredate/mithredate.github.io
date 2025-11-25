@@ -209,7 +209,6 @@
 
 <script>
 import ixdfLogo from '@/assets/logos/ixdf.png'
-import check24Logo from '@/assets/logos/check24.png'
 import parslyLogo from '@/assets/logos/parsly.png'
 import podroLogo from '@/assets/logos/podro.svg'
 import rdsyscoLogo from '@/assets/logos/rdsysco.png'
@@ -227,9 +226,10 @@ export default {
       content: contentData,
       coreCompetencies: [
         "Domain-Driven Design (DDD)", "Test-Driven Development (TDD)",
-        "Agile Software Development",
-        "Microservices", "Kubernetes", "AWS", "RESTful API",
-        "PHP", "Javascript", "Typescript"
+        "Agile Software Development", "CQRS & Event Sourcing",
+        "Microservices", "Kubernetes", "AWS", "Docker", "RESTful API",
+        "PHP", "Symfony", "Laravel", "Javascript", "Typescript",
+        "AI & Automation", "n8n", "Braze", "MarTech", "RabbitMQ"
       ],
       footerLinks: [
         {name: 'LinkedIn', url: 'https://www.linkedin.com/in/mhedayati', logo: linkedinLogo},
@@ -240,21 +240,20 @@ export default {
       ],
       positions: [
         {
+          title: 'Engineering Manager - AI & Automation<br/>Formerly, Senior Software Engineer (MarTech)',
+          company: 'Roadsurfer GmbH, Munich - Remote',
+          dates: '09/2025 - Now',
+          logo: rsfLogo,
+        },{
           title: 'Senior Software Engineer',
           company: 'Roadsurfer GmbH, Munich - Remote',
-          dates: '02/2025 - Now',
+          dates: '02/2025 - 08/2025',
           logo: rsfLogo,
-        },
-        {
-          title: 'Full-stack Engineer',
-          company: 'Check24 Vergleichsportal, Frankfurt am Main - Hybrid',
-          dates: '08/2024 - 01/2025',
-          logo: check24Logo,
         },
         {
           title: 'Senior Software Engineer',
           company: 'Interaction Design Foundation, Dubai - Remote',
-          dates: '12/2023 - 07/2024',
+          dates: '12/2023 - 01/2025',
           logo: ixdfLogo,
         },
         {

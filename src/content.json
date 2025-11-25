@@ -1,18 +1,18 @@
 {
   "meta": {
-    "title": "Mehrdad Hedayati - Senior Software Engineer",
-    "description": "Mehrdad Hedayati is a Senior Software Engineer with over 10 years of experience in developing diverse projects and products.",
-    "keywords": "Mehrdad Hedayati, Senior Software Engineer, DDD, TDD, Microservices, AWS, Kubernetes, PHP, Symfony, Laravel",
+    "title": "Mehrdad Hedayati - Full-Stack Software Engineer",
+    "description": "Full-Stack Software Engineer with 10+ years building scalable web applications. Expert in PHP (Symfony, Laravel), Microservices, Domain-Driven Design, Test-Driven Development, Kubernetes, and AI & Automation. Proven track record in improving system architecture, cutting costs, and delivering impactful features.",
+    "keywords": "Mehrdad Hedayati, Senior Software Engineer, Full-Stack Engineer, DDD, TDD, Microservices, AWS, Kubernetes, PHP, Symfony, Laravel, AI, Automation, n8n, Braze, MarTech, CQRS, Event Sourcing, RabbitMQ, Docker",
     "author": "Mehrdad Hedayati",
-    "ogTitle": "Mehrdad Hedayati - Senior Software Engineer",
-    "ogDescription": "Mehrdad Hedayati is a Senior Software Engineer with over 10 years of experience in developing diverse projects and products.",
-    "twitterTitle": "Mehrdad Hedayati - Senior Software Engineer",
-    "twitterDescription": "Mehrdad Hedayati is a Senior Software Engineer with over 10 years of experience in developing diverse projects and products."
+    "ogTitle": "Mehrdad Hedayati - Full-Stack Engineer | Microservices & AI Automation Expert",
+    "ogDescription": "Senior Full-Stack Engineer specializing in scalable architecture, DDD, TDD, and AI automation. 10+ years of experience delivering high-impact solutions across MarTech, EdTech, and E-commerce.",
+    "twitterTitle": "Mehrdad Hedayati - Full-Stack Engineer | 10+ Years",
+    "twitterDescription": "Building scalable web applications with clean architecture. Expert in Microservices, DDD, TDD, Kubernetes, and AI & Automation."
   },
   "hero": {
     "name": "Mehrdad Hedayati",
-    "title": "Senior Fullstack Developer",
-    "tagline": "Over 10 years crafting exceptional digital experiences with clean, maintainable code and innovative solutions.",
+    "title": "Full-Stack Software Engineer | Microservices, DDD & TDD | Kubernetes | AI & Automation",
+    "tagline": "Building scalable solutions and solving real-world problems with clean architecture, maintainable code, and proven development practices.",
     "quickIntro": "Coffee enthusiast ☕ • Anime lover 🎌 • Sushi connoisseur 🍣 • River walker 🌊 • Yoga practitioner 🧘‍♂️",
     "profileAlt": "Mehrdad Hedayati",
     "ctaButtons": {
