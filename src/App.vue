@@ -173,6 +173,19 @@
       </div>
     </section>
 
+    <!-- Education Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-12">Education</h2>
+          <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 shadow-lg">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Bachelor of Science in Computer Science</h3>
+            <p class="text-lg text-blue-600 font-semibold">University of Isfahan, Iran</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-black">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -225,11 +238,14 @@ export default {
     return {
       content: contentData,
       coreCompetencies: [
+        "PHP", "TypeScript", "Kubernetes", "Microservices",
         "Domain-Driven Design (DDD)", "Test-Driven Development (TDD)",
-        "Agile Software Development", "CQRS & Event Sourcing",
-        "Microservices", "Kubernetes", "AWS", "Docker", "RESTful API",
-        "PHP", "Symfony", "Laravel", "Javascript", "Typescript",
-        "AI & Automation", "n8n", "Braze", "MarTech", "RabbitMQ"
+        "AWS", "Symfony", "Laravel", "Docker",
+        "CQRS", "Event Sourcing", "RabbitMQ", "Apache Kafka",
+        "React", "Vue.js", "Tailwind CSS",
+        "AI", "Automation", "n8n",
+        "Java", "Kotlin", "Go",
+        "Agile Software Development", "RESTful API", "GraphQL", "gRPC"
       ],
       footerLinks: [
         {name: 'LinkedIn', url: 'https://www.linkedin.com/in/mhedayati', logo: linkedinLogo},
@@ -240,7 +256,7 @@ export default {
       ],
       positions: [
         {
-          title: 'Engineering Manager - AI & Automation<br/>Formerly, Senior Software Engineer (MarTech)',
+          title: 'Team Lead Software Engineering - AI & Automation',
           company: 'Roadsurfer GmbH, Munich - Remote',
           dates: '09/2025 - Now',
           logo: rsfLogo,
