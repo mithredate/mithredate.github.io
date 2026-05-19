@@ -1,13 +1,12 @@
 {
   "name": "mithredate.github.io",
-  "homepage": "https://mithredate.github.io",
+  "homepage": "https://mithredate.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
-    "deploy": "pnpm build && gh-pages -d dist"
+    "serve": "vite preview"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^6.0.7",
@@ -26,8 +25,7 @@
     "@vue/cli-plugin-eslint": "~5.0.9",
     "@vue/cli-service": "~5.0.9",
     "eslint": "^10.4.0",
-    "eslint-plugin-vue": "^10.9.1",
-    "gh-pages": "^6.3.0"
+    "eslint-plugin-vue": "^10.9.1"
   },
   "eslintConfig": {
     "root": true,
