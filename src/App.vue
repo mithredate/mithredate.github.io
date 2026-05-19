@@ -1,10 +1,10 @@
 <template>
-  <FontArgon>
+  <main>
     <!-- Hero Section -->
-    <section
+    <section aria-labelledby="hero-name"
         class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-black flex justify-center items-start sm:items-center relative overflow-hidden pt-16 sm:pt-0">
       <!-- Animated background elements -->
-      <div class="absolute inset-0 opacity-10">
+      <div aria-hidden="true" class="absolute inset-0 opacity-10 pointer-events-none">
         <div
             class="absolute top-20 left-20 w-72 h-72 bg-emerald-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
         <div
@@ -18,20 +18,21 @@
           <!-- Profile Image -->
           <div class="mb-8 flex justify-center">
             <div class="relative">
-              <div
+              <div aria-hidden="true"
                   class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-blue-400 rounded-full blur-lg opacity-75 animate-pulse"></div>
               <img src="@/assets/profilepic.jpeg" :alt="content.hero.profileAlt"
+                   width="160" height="160" fetchpriority="high"
                    class="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-white shadow-2xl object-cover">
             </div>
           </div>
 
           <!-- Name and Title -->
-          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+          <h1 id="hero-name" class="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
             {{ content.hero.name }}
           </h1>
-          <h2 class="text-xl sm:text-2xl lg:text-3xl text-purple-200 mb-6 font-light">
+          <p class="text-xl sm:text-2xl lg:text-3xl text-purple-200 mb-6 font-light">
             {{ content.hero.title }}
-          </h2>
+          </p>
 
           <!-- Tagline -->
           <p class="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -46,27 +47,29 @@
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <a href="#experience"
-               class="bg-gradient-to-r from-blue-600 to-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:from-blue-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+               class="bg-gradient-to-r from-blue-600 to-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:from-blue-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900">
               {{ content.hero.ctaButtons.viewExperience }}
             </a>
             <a href="#contact"
-               class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300 transform hover:scale-105">
+               class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300 transform hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900">
               {{ content.hero.ctaButtons.getInTouch }}
             </a>
           </div>
 
           <!-- Core Skills -->
-          <div class="flex flex-wrap justify-center gap-2 mb-8 max-w-3xl mx-auto">
-            <span v-for="skill in coreCompetencies" :key="skill"
-                  class="bg-white/10 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm border border-white/20 hover:bg-white/20 transition-colors">
+          <ul aria-label="Core competencies"
+              class="flex flex-wrap justify-center gap-2 mb-8 max-w-3xl mx-auto">
+            <li v-for="skill in coreCompetencies" :key="skill"
+                class="bg-white/10 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm border border-white/20 hover:bg-white/20 transition-colors">
               {{ skill }}
-            </span>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
 
       <!-- Scroll indicator -->
-      <div class="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div aria-hidden="true"
+           class="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div class="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
           <div class="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
         </div>
@@ -74,69 +77,71 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-white">
+    <section id="experience" aria-labelledby="experience-heading" class="py-20 bg-white">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-6xl mx-auto">
           <!-- Section Header -->
           <div class="text-center mb-16">
-            <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">{{ content.experience.title }}</h2>
+            <h2 id="experience-heading" class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">{{ content.experience.title }}</h2>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
               {{ content.experience.subtitle }}
             </p>
           </div>
 
           <!-- Timeline -->
-          <div class="relative">
+          <ol class="relative list-none">
             <!-- Timeline line -->
-            <div
+            <div aria-hidden="true"
                 class="absolute left-4 md:left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-emerald-500"></div>
 
             <!-- Experience Items -->
-            <div v-for="(position, index) in positions" :key="position.title"
+            <li v-for="(position, index) in positions" :key="position.title"
                  class="relative mb-12 md:mb-16">
               <!-- Timeline dot -->
-              <div
+              <div aria-hidden="true"
                   class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full border-4 border-white shadow-lg -top-2"></div>
 
               <!-- Content -->
-              <div class="ml-12 md:ml-0 md:w-5/12" :class="index % 2 === 0 ? 'md:mr-auto' : 'md:ml-auto'">
+              <article class="ml-12 md:ml-0 md:w-5/12" :class="index % 2 === 0 ? 'md:mr-auto' : 'md:ml-auto'">
                 <div
                     class="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 md:p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
                   <!-- Header -->
                   <div class="flex items-start gap-4 mb-6">
-                    <img :src="position.logo" :alt="`${position.company} Logo`"
+                    <img :src="position.logo" :alt="''" aria-hidden="true"
+                         width="80" height="80" loading="lazy" decoding="async"
                          class="w-16 h-16 md:w-20 md:h-20 rounded-xl object-cover shadow-md">
                     <div class="flex-1">
                       <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-1">{{ position.title }}</h3>
                       <p class="text-lg text-blue-600 font-semibold mb-1">{{ position.company }}</p>
-                      <p class="text-sm text-gray-500">{{ position.dates }}</p>
+                      <p class="text-sm text-gray-500">
+                        <time>{{ position.dates }}</time>
+                      </p>
                     </div>
                   </div>
 
                 </div>
-              </div>
-            </div>
-          </div>
+              </article>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
 
     <!-- Mentorship Section -->
-    <section class="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="mentorship" aria-labelledby="mentorship-heading"
+             class="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
           <!-- Section Header -->
           <div class="mb-16">
-            <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">{{ content.mentorship.title }}</h2>
+            <h2 id="mentorship-heading" class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">{{ content.mentorship.title }}</h2>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
               {{ content.mentorship.subtitle }}
             </p>
           </div>
 
           <!-- Mentorship Card -->
-          <div
-              class="bg-white rounded-3xl shadow-xs p-8 sm:p-12 hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
-              style="box-shadow: 0 25px 50px -12px rgba(225, 49, 108, 0.15);">
+          <div class="bg-white rounded-3xl p-8 sm:p-12 hover:-translate-y-1 transition-transform duration-300 shadow-[0_25px_50px_-12px_rgba(225,49,108,0.15)]">
             <div class="flex flex-col-reverse md:flex-row items-start gap-8">
               <!-- Content -->
               <div class="flex-1 text-center md:text-left">
@@ -149,10 +154,10 @@
                 <a href="https://adplist.org/mentors/mehrdad-hedayati"
                    target="_blank"
                    rel="noopener noreferrer"
-                   class="inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-xs"
-                   style="background: linear-gradient(135deg, rgb(225, 49, 108), rgb(239, 68, 68)); box-shadow: 0 10px 25px rgba(225, 49, 108, 0.3);">
+                   :aria-label="`${content.mentorship.ctaText} on ADPList (opens in new tab)`"
+                   class="inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-semibold transition-transform duration-300 hover:scale-105 bg-[linear-gradient(135deg,rgb(225,49,108),rgb(239,68,68))] shadow-[0_10px_25px_rgba(225,49,108,0.3)] focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-300 focus-visible:ring-offset-2">
                   <span>{{ content.mentorship.ctaText }}</span>
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                   </svg>
@@ -162,8 +167,9 @@
               <!-- ADPList Impact Widget -->
               <div class="w-full md:w-auto flex justify-center md:justify-end">
                 <div class="w-full max-w-sm md:max-w-xs rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                  <img alt="ADPList Impact"
-                       class="w-full h-auto rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+                  <img alt="ADPList mentorship impact stats"
+                       loading="lazy" decoding="async"
+                       class="w-full h-auto rounded-xl"
                        src="https://adplist-users-production.s3.us-east-1.amazonaws.com/3b611639b01fa697d1a33947b79c1229/swags/5c06e00a-1ac5-5dcc-946d-a1e0bc7bd514.webp">
                 </div>
               </div>
@@ -174,10 +180,10 @@
     </section>
 
     <!-- Education Section -->
-    <section class="py-20 bg-white">
+    <section id="education" aria-labelledby="education-heading" class="py-20 bg-white">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-12">Education</h2>
+          <h2 id="education-heading" class="text-4xl sm:text-5xl font-bold text-gray-900 mb-12">Education</h2>
           <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 shadow-lg">
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Bachelor of Science in Computer Science</h3>
             <p class="text-lg text-blue-600 font-semibold">University of Isfahan, Iran</p>
@@ -187,37 +193,45 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-black">
+    <section id="contact" aria-labelledby="contact-heading"
+             class="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-black">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">{{ content.contact.title }}</h2>
+          <h2 id="contact-heading" class="text-4xl sm:text-5xl font-bold text-white mb-4">{{ content.contact.title }}</h2>
           <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
             {{ content.contact.subtitle }}
           </p>
 
           <!-- Social Links -->
-          <div class="flex flex-wrap justify-center gap-6 mb-12">
-            <a v-for="link in footerLinks" :key="link.name" :href="link.url" target="_blank"
-               class="group bg-white/10 backdrop-blur-sm p-4 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
-              <img :src="link.logo" :alt="`${link.name} Logo`"
-                   class="w-8 h-8 sm:w-10 sm:h-10 filter brightness-0 invert group-hover:scale-110 transition-transform">
-            </a>
-          </div>
+          <ul aria-label="Social and contact links"
+              class="flex flex-wrap justify-center gap-6 mb-12">
+            <li v-for="link in footerLinks" :key="link.name">
+              <a :href="link.url"
+                 :target="link.external ? '_blank' : null"
+                 :rel="link.external ? 'noopener noreferrer me' : null"
+                 :aria-label="link.external ? `${link.name} (opens in new tab)` : link.name"
+                 class="group inline-block bg-white/10 backdrop-blur-sm p-4 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900">
+                <img :src="link.logo" alt="" aria-hidden="true"
+                     width="40" height="40" loading="lazy" decoding="async"
+                     class="w-8 h-8 sm:w-10 sm:h-10 filter brightness-0 invert group-hover:scale-110 transition-transform">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 py-8 border-t border-white/10">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <p class="text-gray-400 text-sm">
-            © {{ new Date().getFullYear() }} {{ content.footer.copyright }}
-          </p>
-        </div>
+  <!-- Footer -->
+  <footer class="bg-slate-900 py-8 border-t border-white/10">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <p class="text-gray-400 text-sm">
+          © {{ new Date().getFullYear() }} {{ content.footer.copyright }}
+        </p>
       </div>
-    </footer>
-  </FontArgon>
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -248,11 +262,11 @@ export default {
         "Agile Software Development", "RESTful API", "GraphQL", "gRPC"
       ],
       footerLinks: [
-        {name: 'LinkedIn', url: 'https://www.linkedin.com/in/mhedayati', logo: linkedinLogo},
-        {name: 'GitHub', url: 'https://github.com/mithredate', logo: githubLogo},
-        {name: 'Email', url: 'mailto:mehrdad.hedayati@gmail.com', logo: emailLogo},
-        {name: 'Telegram', url: 'https://t.me/mithredate', logo: telegramLogo},
-        {name: 'X', url: 'https://x.com/mithredate', logo: xLogo},
+        {name: 'LinkedIn', url: 'https://www.linkedin.com/in/mhedayati', logo: linkedinLogo, external: true},
+        {name: 'GitHub', url: 'https://github.com/mithredate', logo: githubLogo, external: true},
+        {name: 'Email', url: 'mailto:mehrdad.hedayati@gmail.com', logo: emailLogo, external: false},
+        {name: 'Telegram', url: 'https://t.me/mithredate', logo: telegramLogo, external: true},
+        {name: 'X', url: 'https://x.com/mithredate', logo: xLogo, external: true},
       ],
       positions: [
         {
