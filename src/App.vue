@@ -185,7 +185,7 @@
         <div class="max-w-4xl mx-auto text-center">
           <h2 id="education-heading" class="text-4xl sm:text-5xl font-bold text-gray-900 mb-12">Education</h2>
           <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 shadow-lg">
-            <h3 class="text-2xl font-bold text-gray-900 mb-2">Bachelor of Science in Computer Science</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Bachelor of Science in Computer Software Engineering</h3>
             <p class="text-lg text-blue-600 font-semibold">University of Isfahan, Iran</p>
           </div>
         </div>
@@ -270,19 +270,19 @@ export default {
       ],
       positions: [
         {
-          title: 'Team Lead Software Engineering - AI & Automation',
+          title: 'Software Engineering Team Lead | Automation and AI',
           company: 'Roadsurfer GmbH, Munich - Remote',
-          dates: '09/2025 - Now',
+          dates: '10/2025 - Now',
           logo: rsfLogo,
         },{
           title: 'Senior Software Engineer',
           company: 'Roadsurfer GmbH, Munich - Remote',
-          dates: '02/2025 - 08/2025',
+          dates: '02/2025 - 09/2025',
           logo: rsfLogo,
         },
         {
           title: 'Senior Software Engineer',
-          company: 'Interaction Design Foundation, Dubai - Remote',
+          company: 'Interaction Design Foundation (IxDF), Dubai - Remote',
           dates: '12/2023 - 01/2025',
           logo: ixdfLogo,
         },
@@ -294,19 +294,19 @@ export default {
         },
         {
           title: 'Senior Software Developer',
-          company: 'Interaction Design Foundation, Dubai - Remote',
+          company: 'Interaction Design Foundation (IxDF), Dubai - Remote',
           dates: '01/2021 - 03/2023',
           logo: ixdfLogo,
         },
         {
-          title: 'Software Development Technical Lead',
-          company: 'Podro, Tehran - Hybrid',
+          title: 'Software Technical Lead',
+          company: 'PodroCo, Tehran - Hybrid',
           dates: '12/2019 - 12/2020',
           logo: podroLogo,
         },
         {
-          title: 'Software Development Technical Lead',
-          company: 'RDSysco, Isfahan - On Site',
+          title: 'Lead Software Developer',
+          company: 'RDSysCo, Isfahan - On Site',
           dates: '10/2016 - 11/2019',
           logo: rdsyscoLogo,
         }

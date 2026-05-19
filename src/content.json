@@ -1,8 +1,8 @@
 {
   "hero": {
     "name": "Mehrdad Hedayati",
-    "title": "Full-Stack Software Engineer | Microservices, DDD & TDD | Kubernetes | AI & Automation",
-    "tagline": "Building scalable solutions and solving real-world problems with clean architecture, maintainable code, and proven development practices.",
+    "title": "Full-Stack Engineer | PHP, TypeScript, Go, Kubernetes, AWS",
+    "tagline": "Building platforms that handle billions of events.",
     "quickIntro": "Coffee enthusiast ☕ • Anime lover 🎌 • Sushi connoisseur 🍣 • River walker 🌊 • Yoga practitioner 🧘‍♂️",
     "profileAlt": "Mehrdad Hedayati",
     "ctaButtons": {
@@ -12,18 +12,18 @@
   },
   "experience": {
     "title": "Professional Journey",
-    "subtitle": "A decade of building impactful solutions across diverse industries and technologies"
+    "subtitle": "A decade across MarTech, EdTech, and logistics."
   },
   "mentorship": {
     "title": "Mentorship",
-    "subtitle": "Sharing knowledge and helping others grow in their software engineering journey",
+    "subtitle": "Mentoring engineers through ADPList.",
     "adpTitle": "ADPList Mentor",
-    "adpDescription": "I'm passionate about helping aspiring software engineers and developers navigate their career paths. Through ADPList, I provide guidance on technical skills, career development, and industry best practices.",
+    "adpDescription": "I mentor on ADPList. Engineers come for career advice, technical decisions, and getting unstuck.",
     "ctaText": "Book a Session"
   },
   "contact": {
     "title": "Let's Connect",
-    "subtitle": "I'd be glad to hear from you!"
+    "subtitle": "I'd be glad to hear from you."
   },
   "footer": {
     "copyright": "Mehrdad Hedayati"

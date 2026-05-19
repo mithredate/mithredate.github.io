@@ -1,6 +1,6 @@
 # Mehrdad Hedayati
 
-> Full-Stack Software Engineer with 10+ years of experience building scalable web applications. Expertise in PHP (Symfony, Laravel), Microservices, Domain-Driven Design (DDD), Test-Driven Development (TDD), Kubernetes, and AI & Automation. Currently Team Lead at Roadsurfer GmbH.
+> Full-Stack Engineer working with PHP, TypeScript, Go, Kubernetes, and AWS. Currently Software Engineering Team Lead for Automation and AI at Roadsurfer GmbH. A decade across MarTech, EdTech, and logistics.
 
 ## Profile
 
@@ -11,8 +11,11 @@
 
 ## Background
 
-- Team Lead Software Engineering, AI & Automation — Roadsurfer GmbH (2025–present)
-- Senior Software Engineer — Interaction Design Foundation (2021–2025)
-- Full-stack Developer — Parsly (2023)
-- Software Development Technical Lead — Podro, RDSysco (2016–2020)
-- BSc in Computer Science — University of Isfahan
+- Software Engineering Team Lead, Automation and AI — Roadsurfer GmbH (10/2025–present)
+- Senior Software Engineer — Roadsurfer GmbH (02/2025–09/2025)
+- Senior Software Engineer — Interaction Design Foundation (IxDF) (12/2023–01/2025)
+- Full-stack Developer — Parsly (04/2023–11/2023)
+- Senior Software Developer — Interaction Design Foundation (IxDF) (01/2021–03/2023)
+- Software Technical Lead — PodroCo (12/2019–12/2020)
+- Lead Software Developer — RDSysCo (10/2016–11/2019)
+- BSc in Computer Software Engineering — University of Isfahan
