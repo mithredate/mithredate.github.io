@@ -2,7 +2,7 @@
   <main>
     <!-- Hero Section -->
     <section aria-labelledby="hero-name"
-        class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-black flex justify-center items-start sm:items-center relative overflow-hidden pt-16 sm:pt-0">
+        class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-black flex justify-center items-start sm:items-center relative overflow-hidden py-16 lg:py-24">
       <!-- Animated background elements -->
       <div aria-hidden="true" class="absolute inset-0 opacity-10 pointer-events-none">
         <div
@@ -22,7 +22,7 @@
                   class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-blue-400 rounded-full blur-lg opacity-75 animate-pulse"></div>
               <img src="@/assets/profilepic.jpeg" :alt="content.hero.profileAlt"
                    width="160" height="160" fetchpriority="high"
-                   class="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-white shadow-2xl object-cover">
+                   class="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 lg:border-8 border-white shadow-2xl object-cover">
             </div>
           </div>
 
@@ -58,20 +58,12 @@
 
           <!-- Core Skills -->
           <ul aria-label="Core competencies"
-              class="flex flex-wrap justify-center gap-2 mb-8 max-w-3xl mx-auto">
+              class="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
             <li v-for="skill in coreCompetencies" :key="skill"
                 class="bg-white/10 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm border border-white/20 hover:bg-white/20 transition-colors">
               {{ skill }}
             </li>
           </ul>
-        </div>
-      </div>
-
-      <!-- Scroll indicator -->
-      <div aria-hidden="true"
-           class="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
-        <div class="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div class="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>
