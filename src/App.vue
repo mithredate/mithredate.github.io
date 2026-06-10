@@ -244,14 +244,14 @@ export default {
     return {
       content: contentData,
       coreCompetencies: [
-        "PHP", "TypeScript", "Kubernetes", "Microservices",
+        "TypeScript", "Go", "PHP",
+        "AI Agents", "MCP", "RAG", "n8n", "Platform Engineering",
+        "Kubernetes", "AWS", "Docker", "Terraform",
+        "Microservices", "Event-Driven Architecture",
         "Domain-Driven Design (DDD)", "Test-Driven Development (TDD)",
-        "AWS", "Symfony", "Laravel", "Docker",
         "CQRS", "Event Sourcing", "RabbitMQ", "Apache Kafka",
-        "React", "Vue.js", "Tailwind CSS",
-        "AI", "Automation", "n8n",
-        "Java", "Kotlin", "Go",
-        "Agile Software Development", "RESTful API", "GraphQL", "gRPC"
+        "Symfony", "Laravel", "React", "Vue.js",
+        "Java", "Kotlin", "RESTful API", "GraphQL", "gRPC"
       ],
       footerLinks: [
         {name: 'LinkedIn', url: 'https://www.linkedin.com/in/mhedayati', logo: linkedinLogo, external: true},
@@ -262,12 +262,12 @@ export default {
       ],
       positions: [
         {
-          title: 'Software Engineering Team Lead | Automation and AI',
+          title: 'Team Lead, AI & Automation',
           company: 'Roadsurfer GmbH, Munich - Remote',
           dates: '10/2025 - Now',
           logo: rsfLogo,
         },{
-          title: 'Senior Software Engineer',
+          title: 'Senior Full-Stack Engineer, MarTech',
           company: 'Roadsurfer GmbH, Munich - Remote',
           dates: '02/2025 - 09/2025',
           logo: rsfLogo,
@@ -291,7 +291,7 @@ export default {
           logo: ixdfLogo,
         },
         {
-          title: 'Software Technical Lead',
+          title: 'Technical Lead & Founding Engineer',
           company: 'PodroCo, Tehran - Hybrid',
           dates: '12/2019 - 12/2020',
           logo: podroLogo,
