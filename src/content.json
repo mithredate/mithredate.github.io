@@ -1,17 +1,17 @@
 {
   "hero": {
     "name": "Mehrdad Hedayati",
-    "title": "Staff Full-Stack Engineer | Tech Lead, AI & Automation",
+    "title": "Staff Full-Stack Engineer | Senior Team Lead, AI & Platform Engineering",
     "tagline": "Building AI agent platforms and systems that move billions of events.",
-    "quickIntro": "Pulling espresso shots, chasing latte art and tasting notes ☕ • Baking sourdough 🍞 • Sushi 🍣 • Anime 🎌 • Yoga 🧘‍♂️",
+    "quickIntro": "Espresso and sourdough at home ☕🍞 • Meetups and fests around Frankfurt 🎉 • Wine tastings or a good Bier 🍷 • Sushi 🍣 • Anime 🎌 • Yoga 🧘‍♂️",
     "profileAlt": "Mehrdad Hedayati",
     "ctaButtons": {
-      "viewExperience": "View Experience",
-      "getInTouch": "Get In Touch"
+      "viewExperience": "View experience",
+      "getInTouch": "Get in touch"
     }
   },
   "experience": {
-    "title": "Professional Journey",
+    "title": "Experience",
     "subtitle": "A decade across MarTech, EdTech, and logistics."
   },
   "mentorship": {
@@ -19,10 +19,10 @@
     "subtitle": "Mentoring engineers through ADPList.",
     "adpTitle": "ADPList Mentor",
     "adpDescription": "I mentor on ADPList. Engineers come for career advice, technical decisions, and getting unstuck.",
-    "ctaText": "Book a Session"
+    "ctaText": "Book a session"
   },
   "contact": {
-    "title": "Let's Connect",
+    "title": "Get in touch",
     "subtitle": "I'd be glad to hear from you."
   },
   "footer": {
