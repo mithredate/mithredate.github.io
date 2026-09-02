@@ -135,7 +135,7 @@ export default {
       ],
       positions: [
         {
-          title: 'Senior Team Lead, AI & Platform Engineering',
+          title: 'Team Lead, Platform Engineering',
           company: 'Roadsurfer GmbH, Munich · Remote',
           dates: '08/2026 – now',
           current: true,
@@ -143,7 +143,8 @@ export default {
         {
           title: 'Team Lead, AI & Automation',
           company: 'Roadsurfer GmbH, Munich · Remote',
-          dates: '10/2025 – 07/2026',
+          dates: '10/2025 – now',
+          current: true,
         },
         {
           title: 'Senior Full-Stack Engineer, MarTech',
