@@ -1,21 +1,36 @@
 # Mehrdad Hedayati
 
-> Full-Stack Engineer working with PHP, TypeScript, Go, Kubernetes, and AWS. Currently Software Engineering Team Lead for Automation and AI at Roadsurfer GmbH. A decade across MarTech, EdTech, and logistics.
+> Engineering Team Lead at Roadsurfer, based in Frankfurt, Germany. Leads the AI & Automation team (4 engineers, since 10/2025) and the Platform Engineering team (2 engineers, since 08/2026). Writes code for most of the week. Works with Claude Code every day and shares agentic coding practices with other engineers at Roadsurfer.
 
 ## Profile
 
-- [Personal site](https://mithredate.com/): primary portfolio and contact page
-- [LinkedIn](https://www.linkedin.com/in/mhedayati): professional profile and work history
-- [GitHub](https://github.com/mithredate): open-source contributions
-- [ADPList mentor profile](https://adplist.org/mentors/mehrdad-hedayati): mentorship and career guidance
+- [Personal site](https://mithredate.com/): profile, selected work and contact
+- [LinkedIn](https://www.linkedin.com/in/mhedayati): work history
+- [GitHub](https://github.com/mithredate): open source, including the `orchestrate` planning skill for coding agents
+- [ADPList](https://adplist.org/mentors/mehrdad-hedayati): free mentoring for engineers since 03/2024
 
-## Background
+## Selected work
 
-- Software Engineering Team Lead, Automation and AI — Roadsurfer GmbH (10/2025–present)
-- Senior Software Engineer — Roadsurfer GmbH (02/2025–09/2025)
-- Senior Software Engineer — Interaction Design Foundation (IxDF) (12/2023–01/2025)
-- Full-stack Developer — Parsly (04/2023–11/2023)
-- Senior Software Developer — Interaction Design Foundation (IxDF) (01/2021–03/2023)
-- Software Technical Lead — PodroCo (12/2019–12/2020)
-- Lead Software Developer — RDSysCo (10/2016–11/2019)
-- BSc in Computer Software Engineering — University of Isfahan
+- Roadsurfer automation platform on n8n: concept to production in under 3 months; 20+ business workflows and 100+ tools used by all departments; rollout from days to minutes; zero production regressions since the automated testing solution launched.
+- Roadsurfer MarTech: built the Segment to Braze event pipeline alone, 2M+ events a day, no downtime in 6+ months; migrated 12B+ customer data points from a legacy CDP to Braze for 800K+ monthly active users.
+- Interaction Design Foundation: a 5-month investigation cut wasted ad spend from $300K to under $70K a month; email deliverability from 71% to 96%.
+- Podro: founding engineer and interim CTO; engineering grew from 5 to 30+.
+
+## Experience
+
+- Team Lead, Platform Engineering, Roadsurfer (08/2026 to now)
+- Team Lead, AI & Automation, Roadsurfer (10/2025 to now)
+- Senior Full-Stack Engineer, MarTech, Roadsurfer (02/2025 to 09/2025)
+- Senior Software Engineer, Interaction Design Foundation (12/2023 to 01/2025)
+- Full-Stack Developer, Parsly (04/2023 to 11/2023)
+- Senior Software Developer, Interaction Design Foundation (01/2021 to 03/2023)
+- Technical Lead & Founding Engineer, Podro (12/2019 to 12/2020)
+- Lead Software Developer, RDSysCo (10/2016 to 11/2019)
+- Software Developer, Planstr (07/2016 to 09/2016)
+- Lead Software Developer, naisA Global (06/2015 to 09/2016)
+- Co-Founder and Full-Stack PHP Developer, I2N (02/2011 to 05/2015)
+
+## Education and languages
+
+- B.Sc. Computer Software Engineering, University of Isfahan
+- English (fluent), German (B1), Persian (native)

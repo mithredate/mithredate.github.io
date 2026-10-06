@@ -1,60 +1,86 @@
 @import "tailwindcss";
 @config "../../tailwind.config.js";
 
-/* Design tokens — the resume identity translated to the web.
+/* Minimal layout: one 38rem column, a label column plus a content column.
    Accent #2079C7 is the docx accent blue; keep them in sync. */
 :root {
-  --font-serif: 'Merriweather', Georgia, serif;
-  --font-sans: 'Open Sans', system-ui, sans-serif;
-  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
-  --paper: #fcfcfc;
-  --ink: #1b2129;
-  --muted: #5b6672;
-  --faint: #8b95a1;
-  --rule: #e4e7ea;
+  --bg: #ffffff;
+  --fg: #121212;
+  --muted: #646464;
+  --rule: #ebebeb;
   --accent: #2079c7;
-  --accent-strong: #185f9e;
+  --sans: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #0e1116;
-    --ink: #e4e8ec;
-    --muted: #9aa4b0;
-    --faint: #6b7580;
-    --rule: #242b33;
+    --bg: #0e0e0e;
+    --fg: #ededed;
+    --muted: #949494;
+    --rule: #232323;
     --accent: #4d9be0;
-    --accent-strong: #7ab4e8;
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--sans);
+  font-size: .9375rem;
+  line-height: 1.6;
 }
 
 ::selection {
   background: var(--accent);
-  color: var(--paper);
+  color: var(--bg);
 }
 
-a:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
-  border-radius: 2px;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+  *, *::before, *::after {
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
   }
+}
+
+.page { max-width: 38rem; margin: 0 auto; padding-inline: 1.25rem; padding-block: 5rem 4rem; }
+a { color: var(--fg); text-decoration: underline; text-decoration-color: var(--muted); text-underline-offset: 3px; transition: text-decoration-color .15s; }
+a:hover { text-decoration-color: var(--fg); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+.head { display: flex; gap: 1rem; align-items: center; }
+.head img { width: 2.75rem; height: 2.75rem; border-radius: 50%; object-fit: cover; filter: grayscale(1); }
+.head h1 { font-size: .9375rem; font-weight: 500; }
+.head p { color: var(--muted); }
+.row { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1.5rem; margin-top: 3.5rem; }
+.row > * { min-width: 0; }
+.label { font-weight: 400; font-family: var(--mono); font-size: .75rem; color: var(--muted); padding-top: .2rem; }
+.body p + p { margin-top: .9rem; }
+.muted { color: var(--muted); }
+.list { list-style: none; padding: 0; }
+.list li { display: grid; grid-template-columns: 1fr auto; gap: 1rem; padding: .55rem 0; border-bottom: 1px solid var(--rule); align-items: baseline; }
+.list li:first-child { padding-top: 0; }
+.list li > * { min-width: 0; }
+.list small { display: block; color: var(--muted); font-size: .8125rem; }
+.num { font-family: var(--mono); font-size: .8125rem; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.work .num { color: var(--accent); font-size: .875rem; }
+.dated { font-family: var(--mono); font-size: .75rem; color: var(--muted); margin-bottom: .6rem; }
+.plain { list-style: none; padding: 0; }
+.plain li + li { margin-top: .5rem; }
+.connect { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; list-style: none; padding: 0; margin-top: .9rem; }
+.copy { display: inline-flex; align-items: center; gap: .6rem; font: inherit; font-family: var(--mono); font-size: .8125rem; color: var(--fg); background: none; border: 1px solid var(--rule); border-radius: 6px; padding: .45rem .7rem; cursor: pointer; }
+.copy:hover { border-color: var(--muted); }
+.copy .state { color: var(--muted); }
+.gap { margin-top: .9rem; }
+footer { margin-top: 5rem; font-family: var(--mono); font-size: .75rem; color: var(--muted); }
+@media (max-width: 32rem) {
+  .page { padding-block: 3rem 3rem; }
+  .row { grid-template-columns: 1fr; gap: .6rem; margin-top: 2.75rem; }
 }
