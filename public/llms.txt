@@ -12,7 +12,7 @@
 ## Selected work
 
 - Roadsurfer automation platform on n8n: concept to production in under 3 months; 20+ business workflows and 100+ tools used by all departments; rollout from days to minutes; zero production regressions since the automated testing solution launched.
-- Roadsurfer MarTech: built the Segment to Braze event pipeline alone, 2M+ events a day, no downtime in 6+ months; migrated 12B+ customer data points from a legacy CDP to Braze for 800K+ monthly active users.
+- Roadsurfer MarTech: sole engineer on the Segment to Braze event pipeline, 2M+ events a day, no downtime in 6+ months; migrated 12B+ customer data points from a legacy CDP to Braze for 800K+ monthly active users.
 - Interaction Design Foundation: a 5-month investigation cut wasted ad spend from $300K to under $70K a month; email deliverability from 71% to 96%.
 - Podro: founding engineer and interim CTO; engineering grew from 5 to 30+.
 
