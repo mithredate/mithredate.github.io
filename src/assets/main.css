@@ -1,5 +1,4 @@
-@import "tailwindcss";
-@config "../../tailwind.config.js";
+@import "tailwindcss/preflight.css" layer(base);
 
 /* Minimal layout: one 38rem column, a label column plus a content column.
    Accent #2079C7 is the docx accent blue; keep them in sync. */
